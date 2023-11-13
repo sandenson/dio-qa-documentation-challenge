@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10000</projectId>
+    <projectKey>SWAG</projectKey>
+    <exportDate>2023-11-13 03:18:40 UTC</exportDate>
+    <folders>
+        <folder fullPath="Products/Discontinuation" index="0"/>
+    </folders>
+    <testCases>
+        <testCase id="111997037" key="SWAG-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Luiz Gabriel Correia Sandes</createdBy>
+            <createdOn>2023-11-13 01:38:43 UTC</createdOn>
+            <customFields/>
+            <estimatedTime>120000</estimatedTime>
+            <folder><![CDATA[Products/Discontinuation]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Administrador configura descontinuação imediata]]></name>
+            <owner>70121:0a49ea91-0e79-42bf-a6f2-4376a67e2e6d</owner>
+            <priority><![CDATA[Normal]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Administrador define a data e hora de envio da newsletter para um momento pr&oacute;ximo]]></description>
+                        <expectedResult><![CDATA[Data e hora de envio da newsletter &eacute; alterado com sucesso]]></expectedResult>
+                        <testData><![CDATA[Data e hora. Exemplo: Daqui a 2 minutos.]]></testData>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Administrador acessa a p&aacute;gina de configura&ccedil;&atilde;o de produto de algum produto]]></description>
+                        <expectedResult><![CDATA[Administrador deve visualizar a p&aacute;gina de configura&ccedil;&atilde;o do produto]]></expectedResult>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Administrador pressiona o bot&atilde;o &quot;Descontinuar&quot;]]></description>
+                        <expectedResult><![CDATA[Pedido de confirma&ccedil;&atilde;o aparece na tela]]></expectedResult>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Administrador confirma a descontinua&ccedil;&atilde;o]]></description>
+                        <expectedResult><![CDATA[Bot&atilde;o &quot;Descontinuar&quot; &eacute; substitu&iacute;do por bot&atilde;o &quot;Reverter descontinua&ccedil;&atilde;o&quot;]]></expectedResult>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[Administrador verifica o email momentos ap&oacute;s o momento de envio da newsletter]]></description>
+                        <expectedResult><![CDATA[Newsletter notifica a descontinua&ccedil;&atilde;o do produto descontinuado]]></expectedResult>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[Usu&aacute;rio verifica a p&aacute;gina de produtos]]></description>
+                        <expectedResult><![CDATA[O produto descontinuado n&atilde;o se encontra mais na lista de produtos]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
